@@ -7,7 +7,8 @@ This repository contains two versions of a simple **Todo List Application** writ
 
 ## Note
 I commented the version that only runs predefined commands without user input.
-And also uncommet the todo.js version for it to run successfully
+And also uncommet the todo.js version for it to run successfully.
+This version only runs on console.
 ---
 
 ## Features
