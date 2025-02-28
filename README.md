@@ -5,6 +5,9 @@ This repository contains two versions of a simple **Todo List Application** writ
 1. **Basic Version**: A version that only runs predefined commands without user input.
 2. **Interactive CLI Version**: A version that allows users to add, complete, remove, and list todos using console input.
 
+## Note
+I commented the version that only runs predefined commands without user input.
+And also uncommet the todo.js version for it to run successfully
 ---
 
 ## Features
