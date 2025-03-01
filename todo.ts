@@ -3,11 +3,11 @@
 //     task: string;
 //     completed: boolean;
 //   }
-  
+
 //   class TodoList {
 //     private todos: TodoItem[] = [];
 //     private nextId: number = 1;
-  
+
 //     addTodo(task: string): void {
 //       const newTodo: TodoItem = {
 //         id: this.nextId++,
@@ -17,7 +17,7 @@
 //       this.todos.push(newTodo);
 //       console.log(`Added: ${task}`);
 //     }
-  
+
 //     completeTodo(id: number): void {
 //       const todo = this.todos.find((todo) => todo.id === id);
 //       if (todo) {
@@ -27,12 +27,12 @@
 //         console.log(`Todo with ID ${id} not found.`);
 //       }
 //     }
-  
+
 //     removeTodo(id: number): void {
 //       this.todos = this.todos.filter((todo) => todo.id !== id);
 //       console.log(`Removed todo with ID ${id}`);
 //     }
-  
+
 //     listTodos(): void {
 //       console.log("Todo List:");
 //       this.todos.forEach((todo) => {
@@ -40,7 +40,7 @@
 //       });
 //     }
 //   }
-  
+
 //   // Example usage
 //   const myTodos = new TodoList();
 //   myTodos.addTodo("Learn TypeScript");
@@ -50,8 +50,6 @@
 //   myTodos.listTodos();
 //   myTodos.removeTodo(2);
 //   myTodos.listTodos();
-  
-
 
 import * as readline from "readline";
 
@@ -93,7 +91,11 @@ class TodoList {
   listTodos(): void {
     console.log("\n📌 Todo List:");
     this.todos.forEach((todo) => {
-      console.log(`${todo.id}: ${todo.task} - ${todo.completed ? "✅ Done" : "⏳ Pending"}`);
+      console.log(
+        `${todo.id}: ${todo.task} - ${
+          todo.completed ? "✅ Done" : "⏳ Pending"
+        }`
+      );
     });
   }
 }

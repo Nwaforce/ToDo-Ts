@@ -5,10 +5,6 @@ This repository contains two versions of a simple **Todo List Application** writ
 1. **Basic Version**: A version that only runs predefined commands without user input.
 2. **Interactive CLI Version**: A version that allows users to add, complete, remove, and list todos using console input.
 
-## Note
-I commented the version that only runs predefined commands without user input.
-And also uncommet the todo.js version for it to run successfully.
-This version only runs on console.
 ---
 
 ## Features
@@ -29,6 +25,36 @@ Ensure you have the following installed:
   ```sh
   npm install -g typescript
   ```
+
+---
+
+## Setting Up `package.json`
+If you encounter issues related to `package.json`, follow these steps:
+
+1. **Check for Errors in `package.json`**
+   - Open `package.json` and ensure it has correct JSON syntax.
+   - If there is a `"type"` field, ensure it is either `"commonjs"` or `"module"`, or remove it if unnecessary.
+
+2. **Regenerate `package.json`**
+   - If `package.json` is corrupted, delete it and recreate it using:
+     ```sh
+     rm package.json  # For macOS/Linux
+     del package.json # For Windows
+     npm init -y      # Generates a new package.json
+     ```
+
+3. **Use Node.js LTS Version**
+   - Ensure you're running an LTS version of Node.js (recommended v20.x or v18.x) instead of experimental versions.
+   - If using `nvm`, switch with:
+     ```sh
+     nvm use 20
+     ```
+
+4. **Run Your Code Without `package.json` Issues**
+   - If you need to explicitly set the module type when running your script, use:
+     ```sh
+     node --input-type=module todo.js
+     ```
 
 ---
 
@@ -103,5 +129,5 @@ This project is open-source. Feel free to modify and improve it!
 ---
 
 ## Author
-Developed by **Emmanuel** 🚀
+Developed by **Henry** 🚀
 
