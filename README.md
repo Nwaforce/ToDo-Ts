@@ -29,13 +29,16 @@ Ensure you have the following installed:
 ---
 
 ## Setting Up `package.json`
+
 If you encounter issues related to `package.json`, follow these steps:
 
 1. **Check for Errors in `package.json`**
+
    - Open `package.json` and ensure it has correct JSON syntax.
    - If there is a `"type"` field, ensure it is either `"commonjs"` or `"module"`, or remove it if unnecessary.
 
 2. **Regenerate `package.json`**
+
    - If `package.json` is corrupted, delete it and recreate it using:
      ```sh
      rm package.json  # For macOS/Linux
@@ -44,6 +47,7 @@ If you encounter issues related to `package.json`, follow these steps:
      ```
 
 3. **Use Node.js LTS Version**
+
    - Ensure you're running an LTS version of Node.js (recommended v20.x or v18.x) instead of experimental versions.
    - If using `nvm`, switch with:
      ```sh
@@ -61,17 +65,20 @@ If you encounter issues related to `package.json`, follow these steps:
 ## Running the **Basic Version** (No User Input)
 
 ### 1️⃣ Clone the repository
+
 ```sh
   git clone <repo-url>
   cd <repo-folder>
 ```
 
 ### 2️⃣ Compile the TypeScript file
+
 ```sh
   tsc todo.ts
 ```
 
 ### 3️⃣ Run the compiled JavaScript file
+
 ```sh
   node todo.js
 ```
@@ -83,22 +90,27 @@ This will execute the script and display predefined todo operations.
 ## Running the **Interactive CLI Version** (Accepts User Input)
 
 ### 1️⃣ Open the project folder
+
 ```sh
   cd <repo-folder>
 ```
 
 ### 2️⃣ Compile the TypeScript file
+
 ```sh
   tsc todo.ts
 ```
 
 ### 3️⃣ Run the compiled JavaScript file
+
 ```sh
   node todo.js
 ```
 
 ### 4️⃣ Follow the on-screen menu
+
 The application will prompt you with options:
+
 - Press `1` to add a task
 - Press `2` to complete a task
 - Press `3` to remove a task
@@ -108,6 +120,7 @@ The application will prompt you with options:
 ---
 
 ## File Structure
+
 ```
 |-- todo.ts       # TypeScript source code
 |-- todo.js       # Compiled JavaScript file
@@ -117,6 +130,7 @@ The application will prompt you with options:
 ---
 
 ## Technologies Used
+
 - TypeScript
 - Node.js
 - Readline (for user input in CLI version)
@@ -124,10 +138,11 @@ The application will prompt you with options:
 ---
 
 ## License
+
 This project is open-source. Feel free to modify and improve it!
 
 ---
 
 ## Author
-Developed by **Henry** 🚀
 
+Developed by **Henry** 🚀
