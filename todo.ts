@@ -1,6 +1,4 @@
-
 // INTERFACE FOR TYPESCRIPT COMPILIER
-
 
 // interface TodoItem {
 //     id: number;
