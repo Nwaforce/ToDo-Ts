@@ -145,4 +145,4 @@ This project is open-source. Feel free to modify and improve it!
 
 ## Author
 
-Developed by **Henry** 🚀
+Developed by **Emmanuel** 🚀
